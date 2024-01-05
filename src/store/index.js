@@ -1,12 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
-import homeReducer from './home'
-import entireReducer from './entire'
+import { persistStore } from 'redux-persist'
+import persistedReducer from './rootReducer'
 
 const store = configureStore({
-  reducer: {
-    home: homeReducer,
-    entire: entireReducer,
-  },
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false
+    })
 })
 
-export default store
+const persistor = persistStore(store)
+
+export { store, persistor }

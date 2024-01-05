@@ -8,7 +8,15 @@ module.exports = {
   plugins: [
     {
       plugin: CracoLessPlugin,
-    },
+      options: {
+        lessLoaderOptions: {
+          lessOptions: {
+            modifyVars: {},
+            javascriptEnabled: true
+          }
+        }
+      }
+    }
   ],
   webpack: {
     /* 配置别名 */
@@ -22,7 +30,7 @@ module.exports = {
       services: resolve('src/services'),
       store: resolve('src/store'),
       utils: resolve('src/utils'),
-      views: resolve('src/views'),
-    },
-  },
+      views: resolve('src/views')
+    }
+  }
 }

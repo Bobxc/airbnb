@@ -5,7 +5,7 @@ class BobxRequest {
   constructor(baseURL, timeout) {
     this.instance = axios.create({
       baseURL,
-      timeout,
+      timeout
     })
 
     this.instance.interceptors.response.use(
@@ -30,4 +30,6 @@ class BobxRequest {
   }
 }
 
-export default new BobxRequest(BASE_URL, TIME_OUT)
+const bobxRequest = new BobxRequest(BASE_URL, TIME_OUT)
+
+export { bobxRequest }

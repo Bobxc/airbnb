@@ -2,22 +2,33 @@
   "name": "airbnb",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.16",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.4",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.10.2",
     "axios": "^1.4.0",
+    "classnames": "^2.3.2",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.7",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "redux-persist": "^6.0.0",
+    "styled-components": "^6.1.0",
+    "underscore": "^1.13.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "craco start",
+    "server": "node server.js",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
@@ -42,6 +53,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
-    "craco-less": "^2.0.0"
+    "craco-less": "^2.0.0",
+    "prettier": "^3.0.3"
   }
 }
