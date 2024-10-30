@@ -1,4 +1,4 @@
-import { getHomeDiscountData, getHomeGoodPriceData, getHomeHighScoreData, getHomeHotRecommendData, getHomeLongforData, getHomePlusData } from '@/services'
+import { getHomeDiscountData, getHomeGoodPriceData, getHomeHighScoreData, getHomeHotRecommendData, getHomeLongforData, getHomePlusData } from '@/services/modules/home'
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 export const fetchHomeGoodPriceDataAction = createAsyncThunk('fetchHomeGoodPriceData', async () => {

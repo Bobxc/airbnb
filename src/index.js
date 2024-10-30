@@ -11,6 +11,7 @@ import { store, persistor } from 'store'
 import 'assets/css/index.less'
 import App from '@/App'
 import theme from './assets/theme'
+// import './sw.webjs.sdk/autotrack.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
